@@ -6,6 +6,7 @@ import IntroductionScreen from './src/screens/IntroductionScreen';
 import ProjectsScreen from './src/screens/ProjectsScreen';
 import SkillsScreen from './src/screens/SkillsScreen';
 import OthersScreen from './src/screens/OthersScreen';
+import ProjectsStackNavigator from './src/screens/ProjectsStackNavigator';
 
 const Tab = createBottomTabNavigator();
 
@@ -31,7 +32,7 @@ function MyTabs() {
       },
     })}>
       <Tab.Screen name="Introduction" component={IntroductionScreen} />
-      <Tab.Screen name="Projects" component={ProjectsScreen} />
+      <Tab.Screen name="Projects" component={ProjectsStackNavigator} />
       <Tab.Screen name="Skills" component={SkillsScreen} />
       <Tab.Screen name="Others" component={OthersScreen} />
     </Tab.Navigator>
